@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,160 +16,179 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-part">Studio</span></a
-        >
-        <ul class="list">
+    <header class="header">
+      <div class="header-container container">
+        <nav class="nav-container">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-part">Studio</span></a
+          >
+          <ul class="list navigation-list">
+            <li>
+              <a class="navigation-link link current" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="navigation-link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li><a class="navigation-link link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="navigation-list list">
           <li>
-            <a class="navigation-link link current" href="./index.html"
-              >Студія</a
+            <a class="contact-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="navigation-link link" href="./portfolio.html"
-              >Портфоліо</a
+            <a class="contact-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
             >
           </li>
-          <li><a class="navigation-link link" href="#">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="contact-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contact-link link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
       <!-- HERO -->
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button button" type="button">
-          Замовити послугу
-        </button>
+        <div class="hero-container container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero-button button" type="button">
+            Замовити послугу
+          </button>
+        </div>
       </section>
       <!-- SPECIALS -->
       <section>
-        <h2 class="hidden-title">Особливості</h2>
-        <ul class="list">
-          <li>
-            <h3 class="specials-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="specials-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="specials-title">ПЛАНУВАННЯ</h3>
-            <p class="text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="specials-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="hidden-title">Особливості</h2>
+          <ul class="special-container list">
+            <li class="special-item">
+              <h3 class="specials-title">Увага до деталей</h3>
+              <p class="text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="special-item">
+              <h3 class="specials-title">Пунктуальність</h3>
+              <p class="text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="special-item">
+              <h3 class="specials-title">Планування</h3>
+              <p class="text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="special-item">
+              <h3 class="specials-title">Сучасні технології</h3>
+              <p class="text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- CHIM -->
       <section>
-        <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/chim1.jpg"
-              alt="Програмування"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/chim2.jpg"
-              alt="Розробка макетів"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/chim3.jpg"
-              alt="Дизайн"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+        <div class="chim-container container">
+          <h2 class="section-title">Чим ми займаємося</h2>
+          <ul class="chim-list list">
+            <li class="chim-items">
+              <img
+                src="./images/chim1.jpg"
+                alt="Програмування"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="chim-items">
+              <img
+                src="./images/chim2.jpg"
+                alt="Розробка макетів"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li class="chim-items">
+              <img
+                src="./images/chim3.jpg"
+                alt="Дизайн"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- TEAM -->
       <section class="section-team">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/igor.jpg"
-              alt="photo-igor"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Ігор Дем'яненко</h3>
-            <p class="text" lang="en">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/olga.jpg"
-              alt="photo-olga"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Ольга Рєпіна</h3>
-            <p class="text" lang="en">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/mykola.jpg"
-              alt="photo-mykola"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Микола Тарасов</h3>
-            <p class="text" lang="en">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/mykhailo.jpg"
-              alt="photo-mykhailo"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-title">Михайло Єрмаков</h3>
-            <p class="text" lang="en">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container team-container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team-list list">
+            <li class="team-item">
+              <img
+                src="./images/igor.jpg"
+                alt="photo-igor"
+                width="270"
+                height="260"
+              />
+              <div class="team-text-item">
+                <h3 class="team-title">Ігор Дем'яненко</h3>
+                <p class="text" lang="en">Product Designer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/olga.jpg"
+                alt="photo-olga"
+                width="270"
+                height="260"
+              />
+              <div class="team-text-item">
+                <h3 class="team-title">Ольга Рєпіна</h3>
+                <p class="text" lang="en">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/mykola.jpg"
+                alt="photo-mykola"
+                width="270"
+                height="260"
+              />
+              <div class="team-text-item">
+                <h3 class="team-title">Микола Тарасов</h3>
+                <p class="text" lang="en">Marketing</p>
+              </div>
+            </li>
+            <li class="team-item">
+              <img
+                src="./images/mykhailo.jpg"
+                alt="photo-mykhailo"
+                width="270"
+                height="260"
+              />
+              <div class="team-text-item">
+                <h3 class="team-title">Михайло Єрмаков</h3>
+                <p class="text" lang="en">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer-bg">
-      <a href="./index.html" class="logo"
+      <div class="footer-container container">
+        <a href="./index.html" class="logo"
         >Web<span class="logo-footer">Studio</span></a
       >
       <address class="footer-stile">
@@ -194,6 +214,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
